@@ -23,9 +23,7 @@ export default class Home extends React.Component {
         return (
             <div>
                 <HeroSection/>
-                <div style={{ width: '100%', height: '100%', position: 'relative' }}>
-                <Container className="text-center" style={{maxWidth: '1400px'}}>
-                    
+                <Container className="text-center text-dark" style={{maxWidth: '1400px'}}>          
                     <Button style={buttonStyle}>
                         <img
                             src={downArrow}
@@ -58,10 +56,7 @@ export default class Home extends React.Component {
                         </Col>
                     </Row>
                 </Container>
-                <div style={{width: '100%', height: '100%', position: 'absolute', top: '0', left: '0', zIndex: '-20', opacity: '.04'}}>
-                    <img src={FaqImg} width="100%" style={{marginTop: '200px', padding: '10vw', paddingLeft: '3vw'}}/>
-                </div>
-                </div>
+                    
             </div>
         )
     }

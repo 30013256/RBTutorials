@@ -10,26 +10,31 @@ export default class HeroSection extends React.Component {
     constructor(props) {
         super(props);        
     }
-
+    //class="d-flex align-items-center text-white"
     render() {
-        return (
-            <div class="d-flex align-items-center text-white" fluid style={heroStyle}>
-                <Container style={{ maxWidth: '1400px', padding: '0' }}>
-                    <h1 className="font-weight-bold" style={{ fontSize: '80px', marginBottom: '3rem'}}>Learn Reactjs</h1>
-                    <p style={{maxWidth: '500px', marginBottom: '3rem', fontSize: '18px'}} > Enim mollit adipisicing qui excepteur eiusmod laboris. Tempor commodo occaecat excepteur dolore elit elit dolor fugiat. Sunt voluptate laboris elit magna quis aliqua eu ea irure.</p>
-                    <Button onClick={this.scrollToTop} style={buttonStyle}>
-                        <Link className="text-white text-decoration-none" to="/tutorials">Learn React</Link>
-                    </Button>
-                </Container>  
-            </div>                   
+        return (     
+            <Jumbo fluid className="d-flex align-items-center text-white" style={heroStyle}>
+                <Container style={{maxWidth: '1400px'}}>
+                    <h1 className="font-weight-bold" style={{ fontSize: '100px', marginBottom: '3rem'}}>
+                        Learn Reactjs
+                    </h1>
+                    <p style={{ marginBottom: '3rem', fontSize: '20px'}} >
+                        React is a Javascript framework for building user interfaces
+                    </p>                   
+                    <Button style={buttonStyle}>
+                        <Link className="text-white text-decoration-none" to="/tutorials">Take Tutorial</Link>
+                    </Button>       
+                </Container>           
+            </Jumbo> 
         )
     }
 }
 
 const heroStyle = { 
+    textAlign: 'center',
     background: `URL(${HeroImg})`,
     backgroundSize: 'cover',
-    height: '800px',
+    height: '100vh',
     width: '100%',
     padding: '15px',  
 }

@@ -14,8 +14,8 @@ export default class PageNotFound extends React.Component {
 
     render() {
         return (
-            <div>
-                <h1 style={{ margin: '8rem', marginBottom: '60vh'}}>404 not found</h1>
+            <div className="text-dark" style={{minHeight: '100vh'}}>
+                <h1 style={{ margin: '8rem'}}>404 not found</h1>
             </div>
         )
     }

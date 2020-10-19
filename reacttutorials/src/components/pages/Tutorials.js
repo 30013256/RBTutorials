@@ -26,18 +26,16 @@ export default class Tutorials extends React.Component {
                     <Row>
                         <Col md="auto" className="pr-0 position-fixed" style={colNavStyle}>
                             <div className="d-flex flex-column" style={{marginTop: '140px'}}>
-                                <h5 className="text-dark ml-0 pl-0">Tutorials</h5>
-                            
+                                <h5 className="text-dark ml-0 pl-0">Tutorials</h5> 
                                 <NavLink style={colNavItemStyle} end={true} to="/tutorials" activeStyle={activeStyle} className="text-dark text-decoration-none" >
                                     Getting Started
-                                </NavLink>
-                            
+                                </NavLink>       
                                 <NavLink style={colNavItemStyle} to="/tutorials/tut2" activeStyle={activeStyle} className="text-dark text-decoration-none" >
                                     Tut2
                                 </NavLink>
                             </div>                     
                         </Col>
-                        <Col md="auto" className="pr-0 position-fixed" style={{marginTop: '61px',width: '200px',borderRight: 'solid 1px lightgrey',height: '100%',zIndex: '-10'}}></Col>
+                        <Col md="auto" className="pr-0 position-fixed" style={{marginTop: '61px', width: '200px', borderRight: 'solid 1px lightgrey', height: '100%', zIndex: '-10'}}></Col>
                         <Col style={{marginLeft: '240px', marginTop: '200px'}}>               
                             <Routes>
                                 <Route path="/" element={<Tut1 />}/>
@@ -59,8 +57,8 @@ const colNavStyle = {
 
 const colNavItemStyle = {
     width: '100%',
-    height: '30px',
-    padding: '5px',
+    height: '35px',
+    padding: '6px',
     zIndex: '10',
 }
 

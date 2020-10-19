@@ -19,12 +19,17 @@ export default class Home extends React.Component {
         osInstance.scroll({ top : 0 });
     }
 
+    scrollDown(){
+        var osInstance = OverlayScrollbars(document.body);
+        osInstance.scroll(document.getElementById("faq"), 500);
+    }
+
     render() {
         return (
             <div>
                 <HeroSection/>
-                <Container className="text-center text-dark" style={{maxWidth: '1400px'}}>          
-                    <Button style={buttonStyle}>
+                <Container id="faq" className="text-center text-dark" style={{maxWidth: '1400px'}}>          
+                    <Button style={buttonStyle} onClick={this.scrollDown}>
                         <img
                             src={downArrow}
                             height="50"
@@ -33,7 +38,7 @@ export default class Home extends React.Component {
                         />
                     </Button>
 
-                    <h1 style={{ marginTop: '200px', marginBottom: '100px' }}>F A Q</h1>
+                    <h1  style={{ marginTop: '200px', marginBottom: '100px' }}>F A Q</h1>
 
                     <Row style={{ marginBottom: '300px' }} className="d-flex justify-content-around">
                         <Col className="text-center m-4">
@@ -63,7 +68,7 @@ export default class Home extends React.Component {
 }
 
 const buttonStyle = {
-    marginTop: '100px',
+    marginTop: '-200px',
     borderRadius: '50px',
     border: 'none',
     padding: '0',

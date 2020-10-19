@@ -1,0 +1,13 @@
+.page{
+    font-family: 'Montserrat';   
+}
+
+.TutText{
+    color: rgb(85, 85, 85);
+    font-size: 20px;
+}
+
+.os-scrollbar-handle{
+    background: rgba(0, 0, 0, 0) !important;
+    background-image: linear-gradient(to bottom, rgba(67, 168, 170, 1), rgba(105,67,170,1)) !important;  
+}

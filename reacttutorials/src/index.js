@@ -19,10 +19,6 @@ ReactDOM.render(
 
 
 OverlayScrollbars(document.body, {
-  nativeScrollbarsOverlaid: {
-      initialize: false,
-      autoHide: 'l'
-  },
   scrollbars : {
     autoHide: "scroll",
   }

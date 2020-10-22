@@ -9,10 +9,6 @@ import OverlayScrollbars from 'overlayscrollbars';
 
 
 export default class Tutorials extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     async componentDidMount(){
         await(10);
         var osInstance = OverlayScrollbars(document.body);

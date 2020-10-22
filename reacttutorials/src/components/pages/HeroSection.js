@@ -7,10 +7,6 @@ import { Link } from 'react-router-dom';
 
 
 export default class HeroSection extends React.Component {
-    constructor(props) {
-        super(props);        
-    }
-    //class="d-flex align-items-center text-white"
     render() {
         return (     
             <Jumbo fluid className="d-flex align-items-center text-white" style={heroStyle}>

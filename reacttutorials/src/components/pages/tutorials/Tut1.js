@@ -3,10 +3,7 @@ import OverlayScrollbars from 'overlayscrollbars';
 import Card from 'react-bootstrap/Card';
 
 export default class Tut1 extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
+    
     async componentDidMount(){
         await(10);
         var osInstance = OverlayScrollbars(document.body);
@@ -34,6 +31,7 @@ export default class Tut1 extends React.Component {
                     programs. The community has also made components with these modules that you can freely use. React is also very well liked 
                     by developers, with some statistics saying that react is loved by 67% of developers.  
                 </p>
+
                 <Card className="mt-5">
                     <Card.Header>
                         npx create-react-app

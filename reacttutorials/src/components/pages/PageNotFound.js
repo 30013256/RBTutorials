@@ -1,11 +1,7 @@
 import React from 'react';
 import OverlayScrollbars from 'overlayscrollbars';
 
-export default class PageNotFound extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
+export default class PageNotFound extends React.Component { 
     async componentDidMount(){
         await(10);
         var osInstance = OverlayScrollbars(document.body);

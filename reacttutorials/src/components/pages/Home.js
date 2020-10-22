@@ -28,8 +28,8 @@ export default class Home extends React.Component {
         return (
             <div>
                 <HeroSection/>
-                <Container id="faq" className="text-center text-dark" style={{maxWidth: '1400px'}}>          
-                    <Button style={buttonStyle} onClick={this.scrollDown}>
+                <Container id="faq" className="text-center text-dark" style={{maxWidth: '1400px', minHeight: '100vh'}}>          
+                    <Button className="shadow-none" style={buttonStyle} onClick={this.scrollDown}>
                         <img
                             src={downArrow}
                             height="50"

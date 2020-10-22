@@ -1,41 +1,42 @@
 import React from 'react';
 import Logo from './rblogov2.png';
-import { Link, NavLink } from 'react-router-dom';
-import { Navbar, Nav, NavDropdown, Form, Button, FormControl, Container } from 'react-bootstrap';
-import { right } from '@popperjs/core';
+import { NavLink } from 'react-router-dom';
+import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 
 export default function Header() {
     return (
         <header>
-            <Navbar className="customnav" fixed="top"  style={navStyle}>
+            <Navbar expand="lg" className="customnav" fixed="top"  style={navStyle}>
                 <Container style={{ maxWidth: '1400px', padding: '0' }}>
-                    <Navbar.Brand>
-                        <img
-                            src={Logo}
-                            height="50"
-                            className="d-inline-block align-top"
-                            alt="RBLogo"
-                        />    
-                    </Navbar.Brand>
+                    <NavLink to="/">
+                        <Navbar.Brand>
+                            <img
+                                src={Logo}
+                                height="50"
+                                className="d-inline-block align-top"
+                                alt="RBLogo"
+                            />           
+                        </Navbar.Brand>
+                    </NavLink>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
-                        <Navbar.Collapse id="responsive-navbar-nav">
-                            <Nav className="ml-auto text-light">
-                                <Nav.Link>
-                                    <NavLink className="p-4 pb-4 pt-4 text-white text-decoration-none" end={true} activeStyle={activeStyle} to="/" activeStyle={activeStyle}>
-                                        Home
-                                    </NavLink> 
-                                </Nav.Link>
-                                <Nav.Link>
-                                    <NavLink className="p-4 pb-4 pt-4 text-white text-decoration-none" to="/about" activeStyle={activeStyle}>
-                                        About
-                                    </NavLink> 
-                                </Nav.Link>
-                                <Nav.Link>                                  
-                                    <NavLink className="p-4 pb-4 pt-4 text-white text-decoration-none" to="/tutorials" activeStyle={activeStyle}>
-                                        Tutorials
-                                    </NavLink> 
-                                </Nav.Link>
-                            </Nav>    
+                    <Navbar.Collapse id="responsive-navbar-nav">
+                        <Nav className="ml-auto text-light">
+                            <Nav.Item>
+                                <NavLink className="p-4 pb-4 pt-4 text-white text-decoration-none" end={true} activeStyle={activeStyle} to="/" activeStyle={activeStyle}>
+                                    Home
+                                </NavLink> 
+                            </Nav.Item>
+                            <Nav.Item>
+                                <NavLink className="p-4 pb-4 pt-4 text-white text-decoration-none" to="/about" activeStyle={activeStyle}>
+                                    About
+                                </NavLink> 
+                            </Nav.Item>
+                            <Nav.Item>                                  
+                                <NavLink className="p-4 pb-4 pt-4 text-white text-decoration-none" to="/tutorials" activeStyle={activeStyle}>
+                                    Tutorials
+                                </NavLink> 
+                            </Nav.Item>
+                        </Nav>         
                     </Navbar.Collapse>
                 </Container>      
             </Navbar>
@@ -54,7 +55,6 @@ const activeStyle = {
 }
 
 const navStyle = {
-    background: 'rgba( 76, 84, 91 )',
-    background: 'rgba( 76, 84, 91, .80 )',
+    background: 'rgba( 76, 84, 91, .85)',
     backdropFilter: 'blur(2px)',
 }

@@ -11,3 +11,7 @@
     background: rgba(0, 0, 0, 0) !important;
     background-image: linear-gradient(to bottom, rgba(67, 168, 170, 1), rgba(105,67,170,1)) !important;  
 }
+
+.tut-h2-mt{
+    margin-top: 150px;
+}

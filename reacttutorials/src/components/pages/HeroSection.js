@@ -11,7 +11,7 @@ export default class HeroSection extends React.Component {
         return (     
             <Jumbo fluid className="d-flex align-items-center text-white" style={heroStyle}>
                 <Container style={{maxWidth: '1400px'}}>
-                    <h1 className="font-weight-bold" style={{ fontSize: '100px', marginBottom: '3rem'}}>
+                    <h1 className="font-weight-bold text-break" style={{ fontSize: '100px', marginBottom: '3rem'}}>
                         Learn Reactjs
                     </h1>
                     <p style={{ marginBottom: '3rem', fontSize: '20px'}} >
@@ -31,6 +31,7 @@ const heroStyle = {
     background: `URL(${HeroImg})`,
     backgroundSize: 'cover',
     height: '100vh',
+    minHeight: '1000px',
     width: '100%',
     padding: '15px',  
 }

@@ -19,7 +19,7 @@ export default class Tutorials extends React.Component {
         return (
             <div style={{padding: '15px'}}>
                 <Container style={{ maxWidth: '1400px', padding: '0' }}>
-                    <Row>
+                    <Row className="d-none d-md-inline">
                         <Col md="auto" className="pr-0 position-fixed" style={colNavStyle}>
                             <div className="d-flex flex-column" style={{marginTop: '140px'}}>
                                 <h5 className="text-dark ml-0 pl-0">Tutorials</h5> 
@@ -32,13 +32,16 @@ export default class Tutorials extends React.Component {
                             </div>                     
                         </Col>
                         <Col md="auto" className="pr-0 position-fixed" style={{marginTop: '61px', width: '200px', borderRight: 'solid 1px lightgrey', height: '100%', zIndex: '-10'}}></Col>
-                        <Col style={{marginLeft: '240px', marginTop: '200px'}}>               
+                        <Col md="auto" style={{ marginLeft: '240px', marginTop: '200px', overflow: 'none' }}>               
                             <Routes>
                                 <Route path="/" element={<Tut1 />}/>
                                 <Route path="/tut2" element={<Tut2 />}/>
                             </Routes>                                    
                         </Col>
-                    </Row>  
+                    </Row>
+                    <div className="text-dark d-md-none" style={{minHeight: '100vh'}}>
+                        <h1 style={{ marginTop: '8rem'}}>Small Veiw Widths Not Supported</h1>
+                    </div>   
                 </Container>
             </div>    
         )

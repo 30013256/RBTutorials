@@ -6,7 +6,7 @@ import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 export default function Header() {
     return (
         <header>
-            <Navbar expand="lg" className="customnav" fixed="top"  style={navStyle}>
+            <Navbar expand="md" className="customnav" fixed="top"  style={navStyle}>
                 <Container style={{ maxWidth: '1400px', padding: '0' }}>
                     <NavLink to="/">
                         <Navbar.Brand>
@@ -21,18 +21,33 @@ export default function Header() {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ml-auto text-light">
-                            <Nav.Item>
+                            <Nav.Item className="d-none d-md-block">
                                 <NavLink className="p-4 pb-4 pt-4 text-white text-decoration-none" end={true} activeStyle={activeStyle} to="/" activeStyle={activeStyle}>
                                     Home
                                 </NavLink> 
                             </Nav.Item>
-                            <Nav.Item>
+                            <Nav.Item className="d-none d-md-block">
                                 <NavLink className="p-4 pb-4 pt-4 text-white text-decoration-none" to="/about" activeStyle={activeStyle}>
                                     About
                                 </NavLink> 
                             </Nav.Item>
-                            <Nav.Item>                                  
+                            <Nav.Item className="d-none d-md-block">                                  
                                 <NavLink className="p-4 pb-4 pt-4 text-white text-decoration-none" to="/tutorials" activeStyle={activeStyle}>
+                                    Tutorials
+                                </NavLink> 
+                            </Nav.Item>
+                            <Nav.Item className="m-2 d-md-none">                                  
+                                <NavLink className="text-white text-decoration-none" to="/">
+                                    Home
+                                </NavLink> 
+                            </Nav.Item>
+                            <Nav.Item className="m-2 d-md-none">                                  
+                                <NavLink className="text-white text-decoration-none" to="/about">
+                                    About
+                                </NavLink> 
+                            </Nav.Item>
+                            <Nav.Item className="m-2 d-md-none">                                  
+                                <NavLink className="text-white text-decoration-none" to="/tutorials">
                                     Tutorials
                                 </NavLink> 
                             </Nav.Item>

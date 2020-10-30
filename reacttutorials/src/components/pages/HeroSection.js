@@ -31,7 +31,7 @@ const heroStyle = {
     background: `URL(${HeroImg})`,
     backgroundSize: 'cover',
     height: '100vh',
-    minHeight: '1000px',
+    minHeight: '500px',
     width: '100%',
     padding: '15px',  
 }

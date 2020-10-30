@@ -9,6 +9,7 @@ import Footer from './components/layout/Footer';
 import PageNotFound from './components/pages/PageNotFound';
 import Home from './components/pages/Home';
 import Tutorials from './components/pages/Tutorials';
+import DemoWebsites from './components/pages/DemoWebsites';
 
 
 class App extends React.Component {
@@ -18,6 +19,7 @@ class App extends React.Component {
         <Header/>  
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/demowebsites" element={<DemoWebsites />} />
           <Route path="/tutorials/*" element={<Tutorials />}/>
           <Route path="*" element={<PageNotFound />} />
         </Routes>                                                  

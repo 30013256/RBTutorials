@@ -37,7 +37,7 @@ export default function Footer() {
 }
 
 const footerStyle = {
-    background: '#4C545B',
+    background: '#2E3133',
     height: '400px',
     paddingTop: '3rem',
 }

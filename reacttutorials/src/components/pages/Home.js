@@ -72,6 +72,7 @@ const buttonStyle = {
     borderRadius: '50px',
     border: 'none',
     padding: '0',
+    backgroundColor: 'rgba(0,0,0,0)'
 }
 
 const underline = {

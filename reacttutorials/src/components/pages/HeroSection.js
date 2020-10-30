@@ -37,7 +37,7 @@ const heroStyle = {
 }
 
 const buttonStyle = {
-    background: 'linear-gradient(to bottom left, rgba(67,169,170,1), rgba(105,67,170,1))',
+    background: 'linear-gradient(to left, rgba(95,0,255,1), rgba(0,255,192,1))',
     border: 'none',
     padding: '10px',
     paddingLeft: '20px',

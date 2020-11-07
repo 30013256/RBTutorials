@@ -26,8 +26,8 @@ export default class Tutorials extends React.Component {
                                 <NavLink style={colNavItemStyle} end={true} to="/tutorials" activeStyle={activeStyle} className="text-dark text-decoration-none" >
                                     Getting Started
                                 </NavLink>       
-                                <NavLink style={colNavItemStyle} to="/tutorials/tut2" activeStyle={activeStyle} className="text-dark text-decoration-none" >
-                                    Tut2
+                                <NavLink style={colNavItemStyle} to="/tutorials/tickboxtutorial" activeStyle={activeStyle} className="text-dark text-decoration-none" >
+                                    Tickbox
                                 </NavLink>
                             </div>                     
                         </Col>
@@ -35,7 +35,7 @@ export default class Tutorials extends React.Component {
                         <Col md="auto" style={{ marginLeft: '240px', marginTop: '200px', overflow: 'none' }}>               
                             <Routes>
                                 <Route path="/" element={<Tut1 />}/>
-                                <Route path="/tut2" element={<Tut2 />}/>
+                                <Route path="/tickboxtutorial" element={<Tut2 />}/>
                             </Routes>                                    
                         </Col>
                     </Row>
@@ -66,5 +66,5 @@ const activeStyle = {
     paddingBottom: '5px',
     borderWidth: '0 5px 0px 0',
     borderStyle: 'solid',
-    borderImage: 'linear-gradient(to bottom, rgba(67,169,170,1), rgba(105,67,170,1)) 1' 
+    borderImage: 'linear-gradient(to top, rgba(95,0,255,1), rgba(0,255,192,1)) 1' 
 }

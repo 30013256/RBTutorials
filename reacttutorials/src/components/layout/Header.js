@@ -44,6 +44,11 @@ export default function Header() {
                                     Tutorials
                                 </NavLink> 
                             </Nav.Item>
+                            <Nav.Item className="d-none d-md-block">                                  
+                                <NavLink className="p-4 pb-4 pt-4 text-white text-decoration-none" to="/documentation" activeStyle={activeStyle}>
+                                    Documentation
+                                </NavLink> 
+                            </Nav.Item>
                             <Nav.Item className="m-2 d-md-none">                                  
                                 <NavLink className="text-white text-decoration-none" to="/">
                                     Home
@@ -55,8 +60,18 @@ export default function Header() {
                                 </NavLink> 
                             </Nav.Item>
                             <Nav.Item className="m-2 d-md-none">                                  
+                                <NavLink className="text-white text-decoration-none" to="/demowebsites">
+                                    Demos
+                                </NavLink> 
+                            </Nav.Item>
+                            <Nav.Item className="m-2 d-md-none">                                  
                                 <NavLink className="text-white text-decoration-none" to="/tutorials">
                                     Tutorials
+                                </NavLink> 
+                            </Nav.Item>
+                            <Nav.Item className="m-2 d-md-none">                                  
+                                <NavLink className="text-white text-decoration-none" to="/documentation">
+                                    Documentation
                                 </NavLink> 
                             </Nav.Item>
                         </Nav>         

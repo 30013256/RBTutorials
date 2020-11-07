@@ -10,6 +10,7 @@ import PageNotFound from './components/pages/PageNotFound';
 import Home from './components/pages/Home';
 import Tutorials from './components/pages/Tutorials';
 import DemoWebsites from './components/pages/DemoWebsites';
+import Documentation from './components/pages/Documentation';
 
 
 class App extends React.Component {
@@ -21,6 +22,7 @@ class App extends React.Component {
           <Route path="/" element={<Home />} />
           <Route path="/demowebsites" element={<DemoWebsites />} />
           <Route path="/tutorials/*" element={<Tutorials />}/>
+          <Route path="/documentation" element={<Documentation />}/>
           <Route path="*" element={<PageNotFound />} />
         </Routes>                                                  
         <Footer/>              

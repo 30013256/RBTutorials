@@ -23,10 +23,28 @@ export default class Home extends React.Component {
         return (
             <div>            
                 <Container className="text-center text-dark" style={{maxWidth: '1400px', minHeight: '100vh'}}>          
-                   
-                   
-
-                    
+                    <Row style={{marginTop: '140px'}}>
+                        <Col>
+                            <h1>Demo Websites</h1>
+                            <h2 className="tut-h2-mt">Movie Api Website</h2>
+                            <a href="https://unruffled-villani-8d6398.netlify.app/">unruffled-villani-8d6398.netlify.app</a>
+                            <p className="mt-4 TutText">
+                                Website info...
+                            </p>
+                            
+                            <h2 className="tut-h2-mt">Movie Api Website</h2>
+                            <a href="https://unruffled-almeida-d123b1.netlify.app/">unruffled-almeida-d123b1.netlify.app</a>
+                            <p className="mt-4 TutText">
+                                Website info...
+                            </p>
+                            
+                            <h2 className="tut-h2-mt">Movie Api Website</h2>
+                            <a href="https://unruffled-villani-8d6398.netlify.app/">unruffled-villani-8d6398.netlify.app</a>
+                            <p className="mt-4 TutText">
+                                Website info...
+                            </p>
+                        </Col> 
+                    </Row>
                 </Container>          
             </div>
         )

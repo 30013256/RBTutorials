@@ -1,18 +1,23 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
-import Logo from './RBLogo.png';
+import Logo from './RBTLogo.png';
 
 
 export default function Footer() {
     return (
         <footer style={footerStyle}>
             <Container className="text-white d-flex justify-content-around" style={{maxWidth: '1400px'}}>             
-                <img
-                    src={Logo}
-                    height="50"
-                    className="d-inline-block align-top"
-                    alt="RBLogo"
-                />
+                <div style={{ fontSize: '30px' }}>
+                    <img
+                        src={Logo}
+                        height="50"
+                        className="d-inline-block align-top"
+                        alt="RBLogo"
+                    />
+                    {' '}
+                    Tutorials
+                </div>
+                
                 <div className="text-center">
                     <h2>About</h2>
                     <a style={linkStyle} href="/">

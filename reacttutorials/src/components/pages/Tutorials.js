@@ -5,6 +5,8 @@ import Col from 'react-bootstrap/Col';
 import { NavLink, Routes, Route } from 'react-router-dom';
 import Tut1 from './tutorials/Tut1';
 import Tut2 from './tutorials/Tut2';
+import Tut3 from './tutorials/Tut3';
+import TutNetlify from './tutorials/TutNetlify';
 import OverlayScrollbars from 'overlayscrollbars';
 
 
@@ -29,6 +31,12 @@ export default class Tutorials extends React.Component {
                                 <NavLink style={colNavItemStyle} to="/tutorials/tickboxtutorial" activeStyle={activeStyle} className="text-dark text-decoration-none" >
                                     Tickbox
                                 </NavLink>
+                                <NavLink style={colNavItemStyle} to="/tutorials/wetherapptutorial" activeStyle={activeStyle} className="text-dark text-decoration-none" >
+                                    Wether app
+                                </NavLink>
+                                <NavLink style={colNavItemStyle} to="/tutorials/netlifytutorial" activeStyle={activeStyle} className="text-dark text-decoration-none" >
+                                    Netlify
+                                </NavLink>
                             </div>                     
                         </Col>
                         <Col md="auto" className="pr-0 position-fixed" style={{marginTop: '61px', width: '200px', borderRight: 'solid 1px lightgrey', height: '100%', zIndex: '-10'}}></Col>
@@ -36,6 +44,8 @@ export default class Tutorials extends React.Component {
                             <Routes>
                                 <Route path="/" element={<Tut1 />}/>
                                 <Route path="/tickboxtutorial" element={<Tut2 />}/>
+                                <Route path="/wetherapptutorial" element={<Tut3 />}/>
+                                <Route path="/netlifytutorial" element={<TutNetlify />}/>
                             </Routes>                                    
                         </Col>
                     </Row>

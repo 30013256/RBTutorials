@@ -1,41 +1,45 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Logo from './RBTLogo.png';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import { NavLink } from 'react-router-dom';
 
 
 export default function Footer() {
     return (
         <footer style={footerStyle}>
-            <Container className="text-white d-flex justify-content-around" style={{maxWidth: '1400px'}}>             
-                <div style={{ fontSize: '30px' }}>
-                    <img
-                        src={Logo}
-                        height="50"
-                        className="d-inline-block align-top"
-                        alt="RBLogo"
-                    />
-                    {' '}
-                    Tutorials
-                </div>
-                
-                <div className="text-center">
-                    <h2>About</h2>
-                    <a style={linkStyle} href="/">
-                        <p>link</p>
-                    </a> 
-                    <a>
-                        <p>link</p>
-                    </a>    
-                </div>
-                <div className="text-center">
-                    <h2>Other</h2> 
-                    <a>
-                        <p>link</p>
-                    </a> 
-                    <a>
-                        <p>link</p>
-                    </a>  
-                </div>                     
+            <Container className="text-white" style={{maxWidth: '1400px'}}>             
+                <Row>
+                    <Col md className="text-center mb-4" style={{ fontSize: '30px' }}>
+                        <img
+                            src={Logo}
+                            height="50"
+                            className="d-inline-block align-top"
+                            alt="RBLogo"
+                        />
+                        {' '}
+                        Tutorials
+                    </Col>
+                    <Col md className="text-center mb-4">
+                        <h2>About</h2>
+                        <a style={linkStyle} href="https://github.com/30013256/RBTutorials">
+                            <p>Github</p>
+                        </a> 
+                        <NavLink style={linkStyle} to="/documentation">
+                            Documentation
+                        </NavLink>  
+                    </Col>
+                    <Col md className="text-center mb-4">
+                        <h2>Contact</h2> 
+                        <a>
+                            <p>jacquesrockell@gmail.com</p>
+                        </a> 
+                        <a>
+                            <p>stephenb3213@gmail.com</p>
+                        </a> 
+                    </Col>
+                </Row>                    
             </Container>
         </footer>
     )
@@ -43,7 +47,7 @@ export default function Footer() {
 
 const footerStyle = {
     background: '#2E3133',
-    height: '400px',
+    paddingBottom: '3rem',
     paddingTop: '3rem',
 }
 
